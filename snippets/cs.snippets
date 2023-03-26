@@ -60,23 +60,32 @@
 snippet sim
 	${1:public} static int Main(string[] args)
 	{
-		${0}
+		${0:${VISUAL}}
 		return 0;
 	}
 snippet simc
-	public class Application
+	internal class Program
 	{
 		${1:public} static int Main(string[] args)
 		{
-			${0}
+			${0:${VISUAL}}
 			return 0;
 		}
 	}
 snippet svm
 	${1:public} static void Main(string[] args)
 	{
-		${0}
+		${0:${VISUAL}}
 	}
+snippet svmc
+	internal class Program
+	{
+		${1:public} static void Main(string[] args)
+		{
+			${0:${VISUAL}}
+		}
+	}
+	
 # if condition
 snippet if
 	if (${1:true})
